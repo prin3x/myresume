@@ -1,0 +1,52 @@
+.contact {
+  background: #6f1d1b;
+  min-height: 65vh;
+  height: 70vh;
+  overflow: hidden;
+  .contact__icon-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+  }
+  .wrapper__container {
+    font-family: "Oswald";
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    max-width: 60rem;
+  }
+  .wrapper__icon {
+    margin: 0.75rem 0;
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .wrapper__info {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    align-self: center;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .contact {
+    .contact__icon-container {
+      padding-top: 15rem;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact {
+    .contact__icon-container {
+      padding-top: 15rem;
+    }
+    .wrapper__icon {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

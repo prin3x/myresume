@@ -23,16 +23,92 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.intro {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+.intro__heading {
+  font-size: 5rem;
+}
+
+.intro__input {
+  width: 50rem;
+  height: 10rem;
+  font-size: 5rem;
+  text-align: center;
+  border: none;
+  border-bottom: 5px solid #000;
+  outline: none;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #fff;
+  display: block;
+  padding: 1rem;
+  width: 10rem;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
+  border: 3px solid #000;
+  margin-top: 2rem;
+  transition: all 200ms ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+.button:active {
+  transform: translateY(-1px);
+}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes hideInput {
+  30% {
+    transform: translateY(20px);
   }
-  to {
-    transform: rotate(360deg);
+  99% {
+    width: 100%;
+  }
+  100% {
+    transform: translateY(-1000px);
+    width: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro__heading {
+    font-size: 2.75rem;
   }
 }

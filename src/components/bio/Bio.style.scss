@@ -1,0 +1,104 @@
+.bio {
+  background: #393b44;
+  min-height: 65vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 2.5rem 0;
+
+  .bio__education {
+    display: flex;
+    flex-direction: column;
+    width: 90rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    line-height: 2.9rem;
+
+    .bio__education--header {
+      text-transform: uppercase;
+      border-bottom: 1px solid #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fce38a;
+    }
+    .bio__education--details {
+      font-size: 1.75rem;
+    }
+    .bio__education--details-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .bio__education--details-h3 {
+      text-transform: uppercase;
+      margin: 0.5rem 0;
+    }
+
+    .bio__education--list {
+      margin-left: 1.2rem;
+    }
+    .bio__education--details-year {
+      margin: 0.6rem 0;
+    }
+  }
+}
+.skills__section {
+  height: 50vh;
+  background: #f1faee;
+  .skills__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .skills__heading {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .bio {
+    .bio__education {
+      width: 90rem;
+    }
+    .bio__education {
+      .bio__education--details {
+        font-size: 1.65rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bio {
+    .bio__education {
+      width: 70rem;
+    }
+    .bio__education {
+      .bio__education--details {
+        font-size: 1.4rem;
+      }
+      .bio__education--details-year {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bio {
+    .bio__education {
+      width: 30rem;
+    }
+    .bio__education {
+      .bio__education--details {
+        font-size: 1rem;
+      }
+      .bio__education--details-year {
+        font-size: 1rem;
+      }
+    }
+  }
+}
