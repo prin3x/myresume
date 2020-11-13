@@ -1,44 +1,68 @@
 .navbar {
   background-color: #407470;
-  height: 45vh;
+  min-height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all 500ms ease;
   backface-visibility: hidden;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Work Sans', sans-serif;
+
+  .navbar__content-container{
+    width: 110rem;
+    background-color: #fff;
+    padding: 4rem 5rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px 3px rgba(86,86,86,0.88);
+    display: flex;
+
+    flex-direction: column;
+  }
 
   .navbar__image-container {
-    width: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     height: 10rem;
     border-radius: 50%;
     margin-right: 2.5rem;
+
     .avatar {
       width: 80px;
       height: 80px;
     }
 
+    
+    
     .tool {
       font-size: 10rem;
+      transition: all 500ms ease;
     }
   }
   .navbar__info {
-    width: 80rem;
+    width: 100rem;
+
+    .nav {
+      padding: 0.5rem 0;
+    }
+
     .navbar__greeting {
       background-color: inherit;
       border-radius: 5px;
-      font-size: 6rem;
+      font-size: 3rem;
       font-weight: 500;
       letter-spacing: 2.5px;
-      & > span {
-      }
+
     }
 
     .navbar__info--header {
+      margin-left: 3.5rem;
+      width: 100%;
+      display: block;
       background-color: inherit;
       border-radius: 5px;
-      font-size: 6rem;
+      font-size: 4.75rem;
       font-weight: 800;
       letter-spacing: 2.5px;
     }
@@ -47,6 +71,7 @@
       font-size: 1rem;
     }
     .navbar__info--paragraph {
+      margin-left: 3.5rem;
       background-color: inherit;
       border-radius: 5px;
       font-size: 2.5rem;
@@ -68,20 +93,21 @@
     color: #fff;
   }
   .active > .btn {
-    background: #e84545;
+    background: #5c6e91;
+    color: #fff;
   }
   .btn {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     background: #fff;
     display: block;
-    padding: 1.5rem;
+    padding: 2rem;
     width: 13rem;
     color: #000;
     text-align: center;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    box-shadow:2px 4px 8px -1px #000000;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     outline: none;
     border: none;
     overflow: hidden;
@@ -89,40 +115,34 @@
     font-family: "Oswald", sans-serif;
     letter-spacing: 1.5px;
     transform: translateY(2rem);
+   
   }
   .btn::before {
     content: "";
-    background: #e84545;
+    background: linear-gradient(to right, #5c6e91 80%, #fff 80%, #fff 90%, #5c6e91 90% );
     width: 0;
     height: 100%;
     top: 0%;
-    left: 0%;
+    left: -10px;
     position: absolute;
     z-index: -1;
+    transform: translateX(-15px) skewX(-10deg);
     transition: all 0.2s ease;
   }
-  .primary {
+  .btn{
     border-radius: 5px 0 0 5px;
 
     &:hover::before {
-      width: 100%;
+      width: 150%;
+      left: -10px;
+      transform: translateX(0) skewX(-10deg);
     }
   }
 
-  .secondary {
-    border-radius: 0 5px 5px 0;
-
-    &:hover::before {
-      width: 100%;
-    }
-  }
-
-  .tietiary {
-    &:hover::before {
-      width: 100%;
-    }
-  }
+ 
 }
+
+
 
 @keyframes circleMove {
   0% {
