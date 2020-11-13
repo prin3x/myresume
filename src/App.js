@@ -5,6 +5,7 @@ import Contact from './components/contact/Contact.components';
 import {Route, Switch} from 'react-router-dom';
 import Bio from './components/bio/Bio.component';
 import Projects from './components/projects/Projects.components';
+import Intro from './components/intro/Intro.component';
 import AOS from 'aos';
 import styled from 'styled-components';
 
@@ -42,12 +43,12 @@ function App() {
   };
   return (
     <Fragment>
-      {/* <Intro
+      <Intro
         handleName={handleName}
         animation={animation}
         handleKeypress={handleKeypress}
         handleAnimation={handleAnimation}
-     />*/}
+      />
       <Navbar name={name} setBgColor={setBgColor} />
       <MainContainer bgColor={bgColor}>
         <Switch>
