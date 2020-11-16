@@ -14,7 +14,6 @@ const MainContainer = styled.div`
   background: ${props => props.bgColor};
   height: 100%;
   z-index: 50;
-  overflow: hidden;
   display: flex;
   justify-content: center;
 `;

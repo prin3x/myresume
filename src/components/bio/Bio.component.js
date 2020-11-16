@@ -138,11 +138,6 @@ const Bio = ({changeColor}) => {
               <div className='skills-container'>
                 <img src='assets/stacks/react.png' alt='' className='stacks' />
                 <img src='assets/stacks/antd.png' alt='' className='stacks' />
-                <img
-                  src='assets/stacks/bootstrap.png'
-                  alt=''
-                  className='stacks'
-                />
               </div>
               <h3 className='bio__stacks--details-h3'>Frontend Tech</h3>
             </div>
