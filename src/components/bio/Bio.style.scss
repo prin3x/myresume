@@ -1,7 +1,6 @@
 .bio {
   background: #fff;
-  min-height: 55vh;
-  width: 60vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +10,9 @@
   border-radius: 10px;
   box-shadow:2px 4px 20px -1px rgba($color: #000000, $alpha: 0.3);
   font-family: 'Work Sans', sans-serif;
+  height: 95%;
+  position: relative;
+
   
   .bio__education {
     display: flex;
@@ -85,6 +87,25 @@
       }
     }
   }
+  .downloadpdf{
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    top: 0;
+    right: 0;
+    position: absolute;
+    &-container {
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .pdficon{
+     font-size: 2rem; 
+    }
+  }
 }
 
 
@@ -102,19 +123,23 @@
 
 }
 
-@media screen and (max-width: 1025px) {
+
+@media screen and (max-width: 1280px) {
   .bio {
+    width: 80vw;
     .bio__education {
-      width: 90rem;
+      width: 85rem;
     }
     .bio__education {
       .bio__education--details {
-        font-size: 1.65rem;
+        font-size: 1.4rem;
+      }
+      .bio__education--details-year {
+        font-size: 1.3rem;
       }
     }
   }
 }
-
 @media screen and (max-width: 960px) {
   .bio {
     .bio__education {
@@ -131,11 +156,42 @@
   }
 }
 
+@media screen and (max-width: 770px) {
+  .bio {
+    padding: 1rem 0;
+    margin: 4rem 0;
+    .bio__education {
+      width: 50rem;
+    }
+    .bio__education {
+      .bio__education--details {
+        font-size: 1.25rem;
+      }
+      .bio__education--details-year {
+        font-size: 1.25rem;
+      }
+    }
+    .skills-container {
+      .stacks{
+        height: 3.8rem;
+        width: auto;
+        padding-left: 1.25rem;
+      }
+    }
+    .downloadpdf{
+      font-size: 1.1rem;
+    }
+  }
+
+}
 @media screen and (max-width: 400px) {
   .bio {
+    width: 34rem;
+    margin: 4rem 0;
     .bio__education {
       width: 30rem;
     }
+    
     .bio__education {
       .bio__education--details {
         font-size: 1rem;
@@ -143,6 +199,33 @@
       .bio__education--details-year {
         font-size: 1rem;
       }
+      .bio__education--header  {
+        font-size: 1.75rem;
+      }
+    }
+    .bio__stacks{
+      flex-direction: column;
+      align-items: center;
+      &--details {
+        width: 100%;
+        &-h3 {
+          font-size: 1.25rem;
+          margin: 3rem 0; 
+        }
+      }
+ 
+    }
+    .skills-container {
+      .stacks{
+        height: 5.5rem;
+        width: auto;
+      }
+    }
+    .downloadpdf{
+      font-size: 0.75rem;
+    }
+    .pdficon{
+      font-size: 1rem;
     }
   }
 }

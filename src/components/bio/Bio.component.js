@@ -2,12 +2,21 @@ import React from 'react';
 import './Bio.style.scss';
 import {FaGraduationCap} from 'react-icons/fa';
 import {GiNetworkBars, GiCog} from 'react-icons/gi';
+import {AiOutlineDownload} from 'react-icons/ai';
 
 const Bio = ({changeColor}) => {
   return (
     <div>
       <div data-aos='fade-up' className='bio' data-aos-duration='1000'>
         <div className='bio__education'>
+          <div className='downloadpdf'>
+            <div className='downloadpdf-container'>
+              <div>Prefer PDF ?</div>
+              <a href='https://drive.google.com/file/d/1cWyJrkl8PD9keeOu_MIQ4j7ZpzmjsDtt/view?usp=sharing'>
+                <AiOutlineDownload className='pdficon' />
+              </a>
+            </div>
+          </div>
           <div className='bio__education--header'>
             <span>
               <FaGraduationCap />
