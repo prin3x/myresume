@@ -1,81 +1,36 @@
-import React from "react";
+import React, { Fragment } from 'react';
 import "./Card.style.scss";
 
 const Card = () => {
   return (
-    <div>
+    <Fragment>
       <div className='card-list'>
-        <article class='card'>
+        <article class='card card-1'>
           <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
+            <div className="background-container">
+
+          <img src="assets\websitescreenshot\sasomtambun.png"  className='card-img' alt="sasomtambun"/>
+            </div>
+            <h2>Sasomtambun</h2>
           </header>
+          <a href="https://sasomtambun.netlify.app" target="_blank" rel='noreferrer'>
+          <button  className='skel-button'>Navigate</button></a>
         </article>
         {/* Second*/}
         <article class='card'>
           <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
+            <h2>Corretto</h2>
           </header>
         </article>
         {/* Third*/}
         <article class='card'>
           <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
+            <h2>Handicap</h2>
           </header>
         </article>
         {/* Third*/}
-        <article class='card'>
-          <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-        </article>
-        {/* Third*/}
-        <article class='card'>
-          <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-        </article>
-        {/* Third*/}
-        <article class='card'>
-          <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-        </article>
-        {/* Third*/}
-        <article class='card'>
-          <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-        </article>
-        {/* Third*/}
-        <article class='card'>
-          <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-        </article>
-        {/* Third*/}
-        <article class='card'>
-          <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-        </article>
-        {/* Third*/}
-        <article class='card'>
-          <header class='card-header'>
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-        </article>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

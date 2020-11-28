@@ -48,19 +48,9 @@ const Navbar = ({name, location, setBgColor}) => {
 
   return (
     <div>
-      <nav className='navbar' style={{backgroundColor}}>
+      <nav className='navbar' style={{ backgroundColor }}>
         <div className='navbar__content-container'>
           <div className='navbar__image-container'>
-            {/*<img
-            className='avatar'
-            src={avatar}
-            alt='Avatar'
-            style={{
-              width: "10rem",
-              borderRadius: "50%",
-            }}
-          />*/}
-
             <IconContainer iconClass={currentPage.icon} />
           </div>
           <div className='navbar__info'>
@@ -69,8 +59,8 @@ const Navbar = ({name, location, setBgColor}) => {
             </div>
             <motion.div
               key={currentPage.content}
-              initial={{x: -300, opacity: 0}}
-              animate={{x: 0, opacity: 1}}
+              initial={{ x: -300, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{
                 type: 'spring',
                 stiffness: 260,
@@ -82,8 +72,8 @@ const Navbar = ({name, location, setBgColor}) => {
             </motion.div>
             <motion.div
               key={currentPage.icon}
-              initial={{x: 300, opacity: 0}}
-              animate={{x: 0, opacity: 1}}
+              initial={{ x: 300, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{
                 type: 'spring',
                 stiffness: 260,

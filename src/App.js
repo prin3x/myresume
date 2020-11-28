@@ -4,10 +4,10 @@ import Navbar from './components/navbar/Navbar.component';
 import Contact from './components/contact/Contact.components';
 import {Route, Switch} from 'react-router-dom';
 import Bio from './components/bio/Bio.component';
-import Projects from './components/projects/Projects.components';
 import Intro from './components/intro/Intro.component';
 import AOS from 'aos';
 import styled from 'styled-components';
+import Card from './components/card/Card.component';
 
 const MainContainer = styled.div`
   width: 100vw;
@@ -55,7 +55,7 @@ function App() {
             <Bio />
           </Route>
           <Route exact path='/projects'>
-            <Projects />
+            <Card />
           </Route>
           <Route exact path='/contact'>
             <Contact />

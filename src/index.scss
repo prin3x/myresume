@@ -6,6 +6,7 @@ $tertiary-color: #bc6868;
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Source+Sans+Pro:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
 :root {
   font-size: 62.5%;
@@ -23,7 +24,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+a{
+  text-decoration: none;
 }
 
 code {
