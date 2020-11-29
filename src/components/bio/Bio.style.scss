@@ -184,6 +184,34 @@
   }
 
 }
+@media screen and (max-width: 650px) {
+  .bio {
+    margin: 8rem 0;
+    width: 90vw;
+    .bio__education {
+      width: 37rem;
+    }
+    .bio__education {
+      .bio__education--details {
+        font-size: 1.25rem;
+      }
+      .bio__education--details-year {
+        font-size: 1.25rem;
+      }
+    }
+    .skills-container {
+      .stacks{
+        height: 3.8rem;
+        width: auto;
+        padding-left: 1.25rem;
+      }
+    }
+    .downloadpdf{
+      font-size: 1.1rem;
+    }
+  }
+
+}
 @media screen and (max-width: 440px) {
   .bio {
     width: 34rem;

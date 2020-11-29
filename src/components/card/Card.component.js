@@ -7,28 +7,58 @@ const Card = () => {
       <div className='card-list'>
         <article class='card card-1'>
           <header class='card-header'>
-            <div className="background-container">
-
-          <img src="assets\websitescreenshot\sasomtambun.png"  className='card-img' alt="sasomtambun"/>
+            <div className='background-container'>
+              <img
+                src='assets\websitescreenshot\sasomtambun.png'
+                className='card-img'
+                alt='sasomtambun'
+              />
             </div>
-            <h2>Sasomtambun</h2>
           </header>
-          <a href="https://sasomtambun.netlify.app" target="_blank" rel='noreferrer'>
-          <button  className='skel-button'>Navigate</button></a>
+          <a
+            href='https://sasomtambun.netlify.app'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='skel-button'>Navigate</button>
+          </a>
         </article>
-        {/* Second*/}
         <article class='card'>
           <header class='card-header'>
-            <h2>Corretto</h2>
+                        <div className='background-container'>
+              <img
+                src='assets\websitescreenshot\corretto.png'
+                className='card-img'
+                alt='sasomtambun'
+              />
+            </div>
           </header>
+          <a
+            href='https://prin3x-corretto.netlify.app'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='skel-button'>Navigate</button>
+          </a>
         </article>
-        {/* Third*/}
         <article class='card'>
           <header class='card-header'>
-            <h2>Handicap</h2>
+                        <div className='background-container'>
+              <img
+                src='assets\websitescreenshot\bookstore.png'
+                className='card-img'
+                alt='sasomtambun'
+              />
+            </div>
           </header>
+          <a
+            href='https://prin3xbookstore.netlify.app'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='skel-button'>Navigate</button>
+          </a>
         </article>
-        {/* Third*/}
       </div>
     </Fragment>
   );

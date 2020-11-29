@@ -205,6 +205,35 @@
     }
   }
 }
+
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    height: 35vh;
+    .navbar__content-container{
+      width: 52rem;
+    }
+    .navbar__info {
+      width: 70rem;
+      .navbar__greeting {
+        font-size: 2rem;
+      }
+      .navbar__info--header {
+        font-size: 2rem;
+      }
+      .navbar__info--paragraph{
+        font-size: 1.5rem;
+      }
+    }
+    .navbar__container {
+      bottom: -10%;
+      left: 20%;
+      .btn {
+        width: 13rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: 500px) {
   .navbar {
     height: 26vh;
@@ -265,3 +294,17 @@
 
     }
   }}
+
+  @media screen and (max-width: 370px) {
+    .navbar {
+      height: 22vh;
+      .navbar__content-container{
+        width: 95vw;
+        padding: 2rem;
+        height: 17rem;
+      }
+      .navbar__container{
+        bottom: -10%;
+  
+      }
+    }}
